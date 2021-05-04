@@ -12,8 +12,7 @@ public class TaskListItem : MonoBehaviour
     [SerializeField]
     TMP_InputField inputField;
 
-    [SerializeField]
-    TextMeshProUGUI label;
+    public TextMeshProUGUI label;
 
     [SerializeField]
     Button saveIcon, editIcon, cancelIcon, deleteIcon;

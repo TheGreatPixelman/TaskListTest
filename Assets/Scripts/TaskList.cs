@@ -41,8 +41,30 @@ public class TaskList : MonoBehaviour
     {
         TaskListItem newItem = Instantiate(prefabTaskListItem, content.transform);
         items.Add(newItem);
-        newItem.text = itemText;
+        newItem.text = itemText.Trim();
         Debug.Log($"Added {newItem.name}");
+
+        //Gets the actual size of the message by iterating each lines of the text
+
+        TextMeshProUGUI label = newItem.label;
+        label.GetComponent<RectTransform>().sizeDelta = new Vector2(label.GetComponent<RectTransform>().sizeDelta.x, 0);
+
+        float chatItemHeight = 0;
+        foreach (var line in label.GetTextInfo(newItem.text).lineInfo)
+        {
+            chatItemHeight += line.lineHeight;
+        }
+
+        //Checks if the chatItemHeight is below the minimum of 5, if it ain't then we apply the new height) 
+        chatItemHeight = chatItemHeight < 30 ? 30 : chatItemHeight;
+
+        RectTransform chatItemRectTransform = label.GetComponent<RectTransform>();
+        //SizeDelta.x is the Width of the RectTransform (this could be done in the ChatItem component)
+        chatItemRectTransform.sizeDelta = new Vector2(chatItemRectTransform.sizeDelta.x, chatItemHeight);
+
+        //Dynamically sets the height of the chat (this could be done in a ChatContent component)
+        RectTransform chatContentRecTransform = content.GetComponent<RectTransform>();
+        chatContentRecTransform.sizeDelta = new Vector2(chatContentRecTransform.sizeDelta.x, chatContentRecTransform.sizeDelta.y + chatItemHeight + chatContentRecTransform.GetComponent<VerticalLayoutGroup>().spacing);
 
         UpdateList();
     }
