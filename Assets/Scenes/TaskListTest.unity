@@ -475,6 +475,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 37430190}
     m_Modifications:
+    - target: {fileID: 3170601001731870244, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3170601001731870245, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -571,6 +575,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: TaskList
       objectReference: {fileID: 0}
+    - target: {fileID: 3170601002802410742, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170601002802410742, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170601002802410742, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170601002802410743, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
+      propertyPath: m_VerticalScrollbarVisibility
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3170601003048470119, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -578,6 +598,14 @@ PrefabInstance:
     - target: {fileID: 3170601003048470119, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170601003672226796, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
+      propertyPath: m_Padding.m_Top
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170601003672226796, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
+      propertyPath: m_Padding.m_Left
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3170601003672226797, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
       propertyPath: m_Pivot.y
@@ -610,6 +638,42 @@ PrefabInstance:
     - target: {fileID: 3170601003672226797, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170601003842697026, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170601003842697026, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170601003842697036, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170601003842697036, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
+      propertyPath: m_Color.b
+      value: 0.754717
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170601003842697036, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.754717
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170601003842697036, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
+      propertyPath: m_Color.r
+      value: 0.754717
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170601003842697037, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.6603774
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170601003842697037, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.6603774
+      objectReference: {fileID: 0}
+    - target: {fileID: 3170601003842697037, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0.6603774
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: faf076f07f3c5a14d99df8e79eb2cda2, type: 3}

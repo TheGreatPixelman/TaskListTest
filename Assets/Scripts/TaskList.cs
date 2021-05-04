@@ -42,7 +42,7 @@ public class TaskList : MonoBehaviour
         TaskListItem newItem = Instantiate(prefabTaskListItem, content.transform);
         items.Add(newItem);
         newItem.text = itemText.Trim();
-        Debug.Log($"Added {newItem.name}");
+    
 
         //Gets the actual size of the message by iterating each lines of the text
 
@@ -64,7 +64,14 @@ public class TaskList : MonoBehaviour
 
         //Dynamically sets the height of the chat (this could be done in a ChatContent component)
         RectTransform chatContentRecTransform = content.GetComponent<RectTransform>();
-        chatContentRecTransform.sizeDelta = new Vector2(chatContentRecTransform.sizeDelta.x, chatContentRecTransform.sizeDelta.y + chatItemHeight + chatContentRecTransform.GetComponent<VerticalLayoutGroup>().spacing);
+
+        float finalHeight = 
+            chatItemHeight + 
+            chatContentRecTransform.GetComponent<VerticalLayoutGroup>().spacing + 
+            chatContentRecTransform.GetComponent<VerticalLayoutGroup>().padding.top + 
+            chatContentRecTransform.GetComponent<VerticalLayoutGroup>().padding.bottom;
+
+        chatContentRecTransform.sizeDelta = new Vector2(chatContentRecTransform.sizeDelta.x, chatContentRecTransform.sizeDelta.y + finalHeight);
 
         UpdateList();
     }
